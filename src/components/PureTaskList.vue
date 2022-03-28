@@ -32,7 +32,6 @@
 <script>
 import Task from "./Task";
 import { reactive, computed } from "vue";
-
 export default {
   name: "PureTaskList",
   components: { Task },
@@ -41,7 +40,6 @@ export default {
     loading: { type: Boolean, default: false },
   },
   emits: ["archive-task", "pin-task"],
-
   setup(props, { emit }) {
     props = reactive(props);
     return {

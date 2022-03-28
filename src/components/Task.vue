@@ -26,7 +26,6 @@
 
 <script>
 import { reactive, computed } from "vue";
-
 export default {
   name: "Task",
   props: {
@@ -38,7 +37,6 @@ export default {
     },
   },
   emits: ["archive-task", "pin-task"],
-
   setup(props, { emit }) {
     props = reactive(props);
     return {
